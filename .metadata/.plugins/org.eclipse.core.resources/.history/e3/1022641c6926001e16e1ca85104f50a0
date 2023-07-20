@@ -1,0 +1,34 @@
+package br.com.farmacia.domain;
+
+import java.sql.Connection;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ViewScoped;
+
+import com.lowagie.text.Document;
+
+import br.com.farmacia.factory.ConexaoFactory;
+
+import net.sf.jasperreports.engine.JRException;
+
+
+@ManagedBean(name = "MBGeraRecibo")
+@ViewScoped
+public class GeraRelatorio {
+
+	
+	public static void main(String[] args) {
+		//Connection conexao = ConexaoFactory.conectar();
+		// criamos um documento vazio
+		Document documentoPDF = new Document();
+		
+		
+		try {
+		
+		
+		} catch (DocumentException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

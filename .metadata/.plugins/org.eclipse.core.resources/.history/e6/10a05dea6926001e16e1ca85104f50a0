@@ -1,0 +1,26 @@
+package br.com.farmacia.domain;
+
+import java.io.IOException;
+import com.lowagie.text.Document;
+import com.lowagie.text.DocumentException;
+
+public class GeraRelatorio {
+	
+	public static void main(String[] args) {
+		//Connection conexao = ConexaoFactory.conectar();
+		// criamos um documento vazio
+		Document documentoPDF = new Document();
+	
+		try {
+		
+		
+		}catch(DocumentException de) {
+			de.printStackTrace();
+		}catch(IOException ioe) {
+			ioe.printStackTrace();
+		}finally {
+			documentoPDF.close();
+		}
+		
+	}
+}
